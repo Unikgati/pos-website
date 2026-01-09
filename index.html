@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS - Aplikasi Kasir Offline Terbaik</title>
+    <meta name="description"
+        content="Aplikasi kasir (POS) offline-first yang cepat, mudah, dan gratis. Kelola penjualan dan rental tanpa ribet.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="#" class="logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                <img src="assets/images/Logo POS App Icon.png" alt="POS Logo" style="height: 48px; width: auto;">
+                <span style="font-size: 1.5rem; font-weight: 800; color: #333;">POS</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Fitur</a>
+                <a href="#advantages">Kelebihan</a>
+                <a href="#download" class="btn btn-primary sm">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge">Sekarang Versi 1.0.0</span>
+                <h1>Kelola Usaha Rental & Jualan Jadi Lebih Mudah</h1>
+                <p>Aplikasi kasir (POS) offline-first yang dirancang khusus untuk mempercepat transaksi dan pencatatan.
+                    Tanpa internet, tanpa langganan bulanan.</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">Download Gratis</a>
+                    <a href="#features" class="btn btn-outline">Pelajari Lebih Lanjut</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Offline</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Biaya Bulanan</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Fast</span>
+                        <span class="stat-label">Performa</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <!-- Dashboard UI Preview -->
+                        <div class="app-ui-preview dashboard-layout">
+                            <!-- Header -->
+                            <div class="app-header-blue">
+                                <div class="app-icon-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                                    </svg>
+                                </div>
+                                <div class="app-title-text">Dashboard</div>
+                                <div class="app-icon-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M23 4v6h-6"></path>
+                                        <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Scrollable Content -->
+                            <div class="app-scroll-content">
+                                <!-- Welcome Card -->
+                                <div class="app-welcome-card fade-in-up">
+                                    <h3>Selamat Datang!</h3>
+                                    <div class="app-date-badge">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        <span>Kamis, 8 Januari 2026</span>
+                                    </div>
+                                </div>
+
+                                <!-- Summary Section -->
+                                <div class="app-section-header fade-in-up delay-1">Ringkasan Hari Ini</div>
+
+                                <!-- Grid Stats -->
+                                <div class="app-stats-grid">
+                                    <!-- Card 1: Penjualan -->
+                                    <div class="stat-box fade-in-up delay-1">
+                                        <div class="stat-icon green-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                                <line x1="1" y1="10" x2="23" y2="10"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="stat-label">Total Penjualan</div>
+                                        <div class="stat-value green-text">Rp 0</div>
+                                    </div>
+
+                                    <!-- Card 2: Transaksi -->
+                                    <div class="stat-box fade-in-up delay-2">
+                                        <div class="stat-icon blue-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                                                </path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="stat-label">Transaksi</div>
+                                        <div class="stat-value blue-text">0</div>
+                                    </div>
+
+                                    <!-- Card 3: Rata-rata -->
+                                    <div class="stat-box fade-in-up delay-2">
+                                        <div class="stat-icon orange-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                                <polyline points="17 6 23 6 23 12"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="stat-label">Rata-rata</div>
+                                        <div class="stat-value orange-text">Rp 0</div>
+                                    </div>
+
+                                    <!-- Card 4: Stok Rendah -->
+                                    <div class="stat-box fade-in-up delay-3">
+                                        <div class="stat-icon red-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path
+                                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                                                </path>
+                                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="stat-label">Stok Rendah</div>
+                                        <div class="stat-value green-text">0</div>
+                                    </div>
+
+                                    <!-- Card 5: Sewa Aktif -->
+                                    <div class="stat-box fade-in-up delay-3">
+                                        <div class="stat-icon grey-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <polyline points="12 6 12 12 16 14"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="stat-label">Sewa Aktif</div>
+                                        <div class="stat-value grey-text">0</div>
+                                    </div>
+
+                                    <!-- Card 6: Terlambat -->
+                                    <div class="stat-box fade-in-up delay-4">
+                                        <div class="stat-icon red-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path
+                                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                                                </path>
+                                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="stat-label">Terlambat</div>
+                                        <div class="stat-value green-text">0</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bottom Navigation -->
+                            <div class="app-bottom-nav">
+                                <div class="nav-item active">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <rect x="3" y="3" width="7" height="7"></rect>
+                                        <rect x="14" y="3" width="7" height="7"></rect>
+                                        <rect x="14" y="14" width="7" height="7"></rect>
+                                        <rect x="3" y="14" width="7" height="7"></rect>
+                                    </svg>
+                                    <span>Dashboard</span>
+                                </div>
+                                <div class="nav-item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                                    </svg>
+                                    <span>Kasir</span>
+                                </div>
+                                <div class="nav-item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z">
+                                        </path>
+                                        <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                                    </svg>
+                                    <span>Rental</span>
+                                </div>
+                                <div class="nav-item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                        </path>
+                                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                    </svg>
+                                    <span>Produk</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Decorative elements -->
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fitur Unggulan</h2>
+                <p>Semua yang Anda butuhkan untuk mengelola usaha kecil dan menengah.</p>
+            </div>
+            <div class="grid-features">
+                <div class="feature-card">
+                    <div class="icon-box">🏷️</div>
+                    <h3>Manajemen Produk</h3>
+                    <p>Catat dan atur stok produk dengan mudah. Dukungan barcode scanner untuk input cepat.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">🤝</div>
+                    <h3>Sistem Rental</h3>
+                    <p>Fitur khusus untuk usaha sewa/rental. Lacak barang keluar, tanggal kembali, dan denda
+                        keterlambatan.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">📊</div>
+                    <h3>Laporan Lengkap</h3>
+                    <p>Pantau omzet harian, mingguan, dan bulanan. Export laporan ke format Excel/CSV.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">🖨️</div>
+                    <h3>Cetak Struk</h3>
+                    <p>Hubungkan dengan printer thermal bluetooth untuk mencetak struk belanja profesional.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">👥</div>
+                    <h3>Manajemen Pelanggan</h3>
+                    <p>Simpan data pelanggan, riwayat transaksi, dan kelola hutang piutang.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">⚡</div>
+                    <h3>Offline First</h3>
+                    <p>Data tersimpan di perangkat Anda. Tetap jualan lancar meski tanpa koneksi internet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="section bg-light">
+        <div class="container">
+            <div class="row-advantage">
+                <div class="advantage-content">
+                    <h2>Kenapa Memilih POS?</h2>
+                    <ul class="advantage-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <div>
+                                <strong>Tanpa Biaya Langganan</strong>
+                                <p>Sekali download, pakai selamanya tanpa biaya tersembunyi.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <div>
+                                <strong>Privasi Data Terjamin</strong>
+                                <p>Database tersimpan lokal di HP Anda. Data usaha Anda milik Anda sepenuhnya.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <div>
+                                <strong>Ringan & Cepat</strong>
+                                <p>Dibuat dengan teknologi Flutter terbaru yang efisien dan smooth.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="advantage-image">
+                    <!-- Abstract Illustration using CSS -->
+                    <!-- SVG Checklist Animation -->
+                    <div style="display: flex; justify-content: center; height: 400px; align-items: center;">
+                        <svg class="checklist-svg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Paper -->
+                            <rect x="15" y="10" width="70" height="90" rx="4" class="paper-bg" fill="white"
+                                stroke="#eee" stroke-width="1" />
+                            <!-- Lines -->
+                            <rect x="35" y="25" width="40" height="4" rx="2" fill="#e0e0e0" />
+                            <rect x="35" y="45" width="40" height="4" rx="2" fill="#e0e0e0" />
+                            <rect x="35" y="65" width="30" height="4" rx="2" fill="#e0e0e0" />
+                            <!-- Checkboxes -->
+                            <rect x="22" y="22" width="8" height="8" rx="2" class="check-box" />
+                            <rect x="22" y="42" width="8" height="8" rx="2" class="check-box" />
+                            <rect x="22" y="62" width="8" height="8" rx="2" class="check-box" />
+                            <!-- Checkmarks -->
+                            <path d="M24 26 L26 28 L30 23" class="check-mark delay-1" />
+                            <path d="M24 46 L26 48 L30 43" class="check-mark delay-2" />
+                            <path d="M24 66 L26 68 L30 63" class="check-mark delay-3" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Release Notes / Changelog Section -->
+    <section id="changelog" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Catatan Rilis (v1.0.0)</h2>
+                <p>Kami terus meningkatkan performa aplikasi untuk pengalaman terbaik Anda.</p>
+            </div>
+            <div class="changelog-box">
+                <div class="changelog-item">
+                    <span class="badge-new">Baru</span>
+                    <p><strong>Tampilan Dashboard Baru:</strong> Desain lebih bersih, compact, dan informatif.</p>
+                </div>
+                <div class="changelog-item">
+                    <span class="badge-fix">Perbaikan</span>
+                    <p><strong>Isu Gambar Produk:</strong> Mengatasi masalah gambar yang kadang tidak muncul atau
+                        terduplikasi.</p>
+                </div>
+                <div class="changelog-item">
+                    <span class="badge-fix">Perbaikan</span>
+                    <p><strong>Sinkronisasi Stok:</strong> Perhitungan stok dan transaksi kini lebih akurat dan
+                        realtime.</p>
+                </div>
+                <div class="changelog-item">
+                    <span class="badge-update">Update</span>
+                    <p><strong>Kestabilan Database:</strong> Optimasi database lokal untuk performa yang lebih cepat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Download Section -->
+    <section id="download" class="section text-center bg-light">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Siap Meningkatkan Usaha Anda?</h2>
+                <p>Download POS sekarang (APK) dan mulai kelola usaha dengan lebih profesional.</p>
+                <div class="download-buttons">
+                    <a href="https://github.com/Unikgati/pos-android/releases/download/v1.0.0/POS_Android_v1.0.0_release.apk"
+                        class="btn btn-white btn-lg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="margin-right: 8px;">
+                            <path
+                                d="M3 16.5V18.75C3 19.9926 4.00736 21 5.25 21H18.75C19.9926 21 21 19.9926 21 18.75V16.5M7.5 12L12 16.5M12 16.5L16.5 12M12 16.5V3"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Download APK (Android)
+                    </a>
+                </div>
+                <p class="small-note">*Mendukung Android 5.0 ke atas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Guide Section -->
+    <section id="install-guide" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cara Install Aplikasi</h2>
+                <p>Ikuti langkah mudah ini karena aplikasi belum tersedia di Play Store.</p>
+            </div>
+
+            <!-- Steps Grid -->
+            <div class="guide-steps"
+                style="max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
+                <!-- Step 1 -->
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Download APK</h4>
+                        <p>Unduh file aplikasi (APK) melalui tombol download di atas.</p>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Izinkan Instalasi</h4>
+                        <p>Buka file. Jika muncul peringatan, pilih <strong>Settings</strong> dan aktifkan
+                            <strong>"Allow from this source"</strong>.
+                        </p>
+                    </div>
+                </div>
+                <!-- Warning Step -->
+                <div class="step-card warning">
+                    <div class="step-number">!</div>
+                    <div class="step-content">
+                        <h4>Bypass Play Protect</h4>
+                        <p>Jika diblokir Google Play Protect, klik <strong>"More details"</strong> lalu pilih
+                            <strong>"Install anyway"</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6285961462361?text=Ingin%20bertanya%20tentang%20aplikasi%20POS" class="float-wa"
+        target="_blank" title="Chat WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                    <img src="assets/images/Logo POS App Icon.png" alt="POS Logo" style="height: 48px; width: auto;">
+                    <span style="font-size: 1.5rem; font-weight: 800; color: #333;">POS</span>
+                </div>
+                <p>&copy; 2024 POS. All rights reserved.</p>
+            </div>
+            <div class="footer-social">
+                <!-- Social links if any -->
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Scroll Animation Script
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Only animate once
+                    }
+                });
+            }, observerOptions);
+
+            // Elements to animate
+            const animatedElements = document.querySelectorAll(
+                '.hero-text, .hero-image, .section-header, .feature-card, .advantage-content, .advantage-image, .cta-box, .changelog-box, .step-card'
+            );
+
+            animatedElements.forEach(el => {
+                el.classList.add('fade-up');
+                observer.observe(el);
+            });
+
+            // Stagger animation for feature cards
+            const featureCards = document.querySelectorAll('.feature-card');
+            featureCards.forEach((card, index) => {
+                card.style.transitionDelay = `${index * 100}ms`;
+            });
+
+            // Stagger animation for step cards
+            const stepCards = document.querySelectorAll('.step-card');
+            stepCards.forEach((card, index) => {
+                card.style.transitionDelay = `${index * 150}ms`;
+            });
+        });
+    </script>
+</body>
+
+</html>
