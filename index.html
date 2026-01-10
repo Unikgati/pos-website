@@ -409,35 +409,64 @@
                 <p>Ikuti langkah mudah ini karena aplikasi belum tersedia di Play Store.</p>
             </div>
 
-            <!-- Steps Grid -->
-            <div class="guide-steps"
-                style="max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
-                <!-- Step 1 -->
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h4>Download APK</h4>
-                        <p>Unduh file aplikasi (APK) melalui tombol download di atas.</p>
+            <!-- Two-column layout: Video (Left) + Steps (Right) -->
+            <div class="install-guide-content">
+                <!-- Video Column (Left) -->
+                <div class="guide-video">
+                    <div class="video-wrapper">
+                        <video controls playsinline preload="metadata">
+                            <source src="https://res.cloudinary.com/dkfue0nxr/video/upload/qgi7i6bmy4hn4359adbn.mp4"
+                                type="video/mp4">
+                            Browser Anda tidak mendukung video.
+                        </video>
                     </div>
+                    <p class="video-caption">Video tutorial instalasi aplikasi POS</p>
                 </div>
-                <!-- Step 2 -->
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h4>Izinkan Instalasi</h4>
-                        <p>Buka file. Jika muncul peringatan, pilih <strong>Settings</strong> dan aktifkan
-                            <strong>"Allow from this source"</strong>.
-                        </p>
+
+                <!-- Steps Column (Right) -->
+                <div class="guide-steps">
+                    <!-- Step 1 -->
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Matikan Play Protect</h4>
+                            <p>Buka <strong>Play Store → Profil → Play Protect → Settings</strong>, lalu nonaktifkan
+                                <strong>"Scan apps with Play Protect"</strong>.
+                                <em>Jangan khawatir, ini hanya sementara agar APK bisa diinstal.</em>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <!-- Warning Step -->
-                <div class="step-card warning">
-                    <div class="step-number">!</div>
-                    <div class="step-content">
-                        <h4>Bypass Play Protect</h4>
-                        <p>Jika diblokir Google Play Protect, klik <strong>"More details"</strong> lalu pilih
-                            <strong>"Install anyway"</strong>.
-                        </p>
+                    <!-- Step 2 -->
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Download APK</h4>
+                            <p>Unduh file aplikasi melalui tombol
+                                <a href="#download" style="color: var(--primary-color); font-weight: 600;">Download
+                                    APK</a>
+                                di atas.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Izinkan Instalasi</h4>
+                            <p>Buka file APK. Jika diminta, pilih <strong>Settings</strong> dan aktifkan
+                                <strong>"Allow from this source"</strong>.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="step-card success">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Aktifkan Kembali Play Protect</h4>
+                            <p>Setelah instalasi selesai, kembali ke <strong>Play Store → Play Protect</strong> dan
+                                aktifkan kembali <strong>"Scan apps with Play Protect"</strong> untuk keamanan.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
