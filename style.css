@@ -231,7 +231,7 @@ p {
     width: 300px;
     height: 600px;
     background-color: #1a1a1a;
-    border-radius: 44px;
+    border-radius: 32px;
     border: 6px solid #222;
     /* Ultra thin modern bezel */
     box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
@@ -246,7 +246,7 @@ p {
     width: 100%;
     height: 100%;
     background-color: #f5f5f5;
-    border-radius: 38px;
+    border-radius: 26px;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -580,6 +580,16 @@ p {
 .step-card.warning .step-number {
     background: #ffc107;
     color: black;
+}
+
+.step-card.success {
+    background: #e8f5e9;
+    border: 1px solid #a5d6a7;
+}
+
+.step-card.success .step-number {
+    background: #4CAF50;
+    color: white;
 }
 
 /* Floating WhatsApp */
@@ -990,5 +1000,84 @@ footer {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Install Guide Two-Column Layout */
+.install-guide-content {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.guide-steps {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.guide-video {
+    flex: 0 0 auto;
+    position: sticky;
+    top: 120px;
+    width: 300px;
+}
+
+.video-wrapper {
+    background: #1a1a1a;
+    border-radius: 32px;
+    padding: 0;
+    border: 6px solid #222;
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    border-radius: 26px;
+    display: block;
+}
+
+.video-caption {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+/* Responsive for Install Guide Video */
+@media (max-width: 900px) {
+    .install-guide-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .guide-video {
+        flex: none;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        position: static;
+    }
+}
+
+@media (max-width: 480px) {
+    .guide-video {
+        max-width: 240px;
+    }
+
+    .video-wrapper {
+        border-radius: 24px;
+        border-width: 4px;
+        padding: 0;
+    }
+
+    .video-wrapper video {
+        border-radius: 20px;
     }
 }
